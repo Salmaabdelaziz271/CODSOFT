@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #E3DEC8;
+    color: #2C6975;
+    overflow-y: scroll;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.my_name {
+    color: #2C6975;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.navbar a {
+    font-size: 1.6rem;
+    font-weight: 450;
+    color: #2C6975;
+    margin-left: 3.5rem;
+
+}
+
+.navbar a:hover {
+    color: rgb(12, 107, 162);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url('/images/my_profile.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+.home-content .home-text {
+    position: relative;
+    width: 32.8rem;
+
+}
+
+.home-content .home-text h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #081b29;
+    -webkit-text-stroke: .7px #74c1e0;
+}
+
+.home-links {
+    position: absolute;
+    bottom: 20rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-links a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #2C6975;
+    background: transparent;
+    border: .2rem solid #2C6975;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.about {
+    background: url('/images/about.jpg') no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.about-content h2 {
+    font-size: 5rem;
+    margin-left: 50%;
+}
+
+.about-content ul {
+    font-size: 2rem;
+    margin-left: 50%;
+}
+
+.skills {
+    background: url('/images/skills.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.skills-content h2 {
+    font-size: 5rem;
+}
+
+.skills-content .progress {
+    padding: .8rem 0;
+}
+
+.skills-content .progress h3 {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content .progress .bar {
+    height: 1.1rem;
+    width: 50%;
+    border-radius: .6rem;
+    border: .2rem solid #2C6975;
+    background-color: antiquewhite;
+    box-sizing: border-box; 
+}
+
+.skills-content .progress .bar span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .3rem;
+    background: #2C6975;
+    box-sizing: border-box; 
+}
+
+.projects h2 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projects-content .project-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #2C6975;
+    overflow: hidden;
+    display: flex;
+}
+
+.project-box img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.project-box .project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #2C6975);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    opacity: 0; 
+}
+
+.project-box:hover .project-description {
+    opacity: 1; 
+}
+
+.project-description h4 {
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.project-description p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.project-description a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: aliceblue;
+    border-radius: 50%;
+}
+
+.project-description a i {
+    font-size: 2rem;
+    color: #081b29;
+}
+
+.resume {
+    text-align: center; 
+}
+.resume h2 {
+    font-size: 5rem; 
+    margin-bottom: 1rem;
+}
+
+.resume img {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%; 
+    margin-top: 1rem;
+}
+
+
+.btn {
+    margin-top: 2rem;
+    background-color: #2C6975;
+    color: white;
+    border: none;
+    padding: 1rem 2rem; 
+    border-radius: 0.5rem;
+    font-size: 1.2rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #2C6975;
+    background: aliceblue;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: aliceblue;
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+.footer-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #2C6975;
+    border-radius: .8rem;
+}
+
+.footer-icon a i {
+    font-size: 2.4rem;
+    color: #E3DEC8;
+
+}
